@@ -1,0 +1,16 @@
+name: NightVision
+version: '${project.version}'
+main: com.github.gavvydizzle.nightvision.NightVision
+api-version: 1.19
+authors: [GavvyDizzle]
+depend: [ServerUtils]
+commands:
+  nightvision:
+    aliases: [nv]
+    description: Toggle night vision
+    permission: nightvision.player
+    permission-message: Insufficient permission
+  nightvisionadmin:
+    description: NightVision admin commands
+    permission: nightvision.admin
+    permission-message: Insufficient permission
