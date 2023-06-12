@@ -39,8 +39,8 @@ public class PlayerManager implements Listener {
     public void reload() {
         FileConfiguration config = instance.getConfig();
         config.options().copyDefaults(true);
-        config.set("onMessage", "&b[NightVision] &aYou will now have permanent night vision");
-        config.set("offMessage", "&b[NightVision] &eTurned off permanent night vision");
+        config.addDefault("onMessage", "&b[NightVision] &aYou will now have permanent night vision");
+        config.addDefault("offMessage", "&b[NightVision] &eTurned off permanent night vision");
         instance.saveConfig();
 
         onMessage = Colors.conv(config.getString("onMessage"));
